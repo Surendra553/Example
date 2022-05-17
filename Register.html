@@ -14,33 +14,29 @@
       <div class="col-lg-3 mt-5"></div>
       <div class="col-lg-6 mt-3">
         <div id="ui" class="mt-5">
-          <form class="form-group text-left">
+          <form class="form-group text-left" action="register.php" method="post">
             <h3 style="text-align:center;"><u>Signup</u></h3>
             <fieldset>
                 <table>
                 <tr>
                     <td><label>First Name : </label></td>
-                    <td><input type="text" name="fname" class="form-control-sm" placeholder="First Name"></td>
+                    <td><input type="text" name="fname" class="form-control-sm" placeholder="First Name" required></td>
                 </tr>
                 <tr>
                     <td><label>Last Name : </label></td>
-                    <td><input type="text" name="lname" class="form-control-sm" placeholder="Last Name"></td>
+                    <td><input type="text" name="lname" class="form-control-sm" placeholder="Last Name" required></td>
                 </tr>
                 <tr>
                     <td><label>Email : </label></td>
-                    <td><input type="email" name="mail" class="form-control-sm" placeholder="Email"></td>
+                    <td><input type="email" name="mail" class="form-control-sm" placeholder="Email" required></td>
                 </tr>
                 <tr>
                     <td><label>Password : </label></td>
-                    <td><input type="password" name="password" class="form-control-sm" placeholder="Password"></td>
-                </tr>
-                <tr>
-                    <td><label>Confirm Password : </label></td>
-                    <td><input type="password" name="cpassword" class="form-control-sm" placeholder="Re-enter password"></td>
+                    <td><input type="password" name="password" class="form-control-sm" placeholder="Password" required></td>
                 </tr>
                 <tr>
                     <td><label>DOB : </label></td>
-                    <td><input type="date" name="dob" class="form-control"> </td>
+                    <td><input type="date" name="dob" class="form-control" required> </td>
                 </tr>
                 
                 </table>
