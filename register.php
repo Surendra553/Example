@@ -18,7 +18,7 @@ else
     $stmt = $conn->prepare("insert into register(fname,lname,mail,password,dob) values(?,?,?,?,?)");
     $stmt->bind_param("sssss",$fname,$lname,$mail,$password,$dob);
     $stmt->execute();
-    echo "<h1>Registration Successful.......</h1>";
+    header("Location: redirect.html");
     $stmt->close();
     $conn->close();
 }
